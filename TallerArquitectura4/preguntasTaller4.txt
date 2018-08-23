@@ -2,6 +2,7 @@ Actores :
     Administrador de la tienda
     Cliente
     Entidad bancaria
+    Visitante
 
 
 Cliente registrarse:
