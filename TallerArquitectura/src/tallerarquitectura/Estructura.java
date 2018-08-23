@@ -19,10 +19,16 @@ public class Estructura {
     public Estructura(String tipoEstructura) {
         this.tipoEstructura = tipoEstructura;
     }
-
+    
+    /**/
     public String getTipoEstructura() {
         return this.tipoEstructura;
     }
+    /*/
+    public void getTipoEstructura() {
+        System.out.println(this.tipoEstructura);
+    }
+    /**/
 
     public void setTipoEstructura(String tipoEstructura) {
         this.tipoEstructura = tipoEstructura;

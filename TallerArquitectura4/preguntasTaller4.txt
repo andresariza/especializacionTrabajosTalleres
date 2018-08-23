@@ -1,0 +1,28 @@
+Actores :
+    Administrador de la tienda
+    Cliente
+    Entidad bancaria
+
+
+Cliente registrarse:
+    cuales campos son obligatorios??
+
+info personal
+    cedula 
+    Nombre
+    Apellido
+    Telefono
+    email
+
+info financiera
+    cedula
+    idTarjetaCRedito
+    tipoTarjeta(visa/master) (que pasa si meten otro tipo de tarjeta o si el cliente no tiene visa o master)
+    Fecha de expiracion (que pasa si la fecha esta caduca)?
+
+Servicio con estado??
+
+que debe mostrar el historial de compras?
+
+
+        
