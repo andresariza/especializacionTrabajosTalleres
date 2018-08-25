@@ -1,0 +1,48 @@
+persona
+    documento
+    nombre
+    apellido
+    telefono
+    email
+    direccion
+    informacion financiera
+    
+    Buscar
+    
+    
+
+informacion financiera
+    idPersona
+    idTarjetaCredito
+    fecha expiracion
+    tipoTarjeta
+
+
+
+Visitante hereda de persona
+    no tiene informacion
+    
+    puede buscar
+    puede registrarse info personal
+
+
+Cliente hereda de persona
+    idCliente especial
+    
+    puede comprarVideo
+    puede registrar infor financiera
+
+
+Video
+    titulo
+    agno
+    descripcion
+    genero
+    calificacion
+
+    
+
+
+Compra 
+    listaVideos
+    idCliente
