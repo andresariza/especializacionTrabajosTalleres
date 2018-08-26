@@ -41,8 +41,17 @@ Video
     calificacion
 
     
+Pedido
+	idCliente
+	subTotal
+	puede Calcular valor
 
+DetallePedido
+	idPedido
+	idVideo
+	cantidad
+	calcularValorLinea
 
-Compra 
-    listaVideos
+Compra
+	idPedido
     idCliente
