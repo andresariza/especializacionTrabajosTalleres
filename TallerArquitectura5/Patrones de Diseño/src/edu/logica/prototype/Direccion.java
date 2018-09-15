@@ -46,10 +46,12 @@ public class Direccion implements Copiable{
     public void setDepartamento(String newDepartamento){ departamento = newDepartamento; }
     public void setCodigoPostal(String newCodigo){ codigoPostal = newCodigo; }
     
+    @Override
     public Object copiar(){
         return new Direccion(predio, ciudad, departamento, codigoPostal);
     }
     
+    @Override
     public String toString(){
         return "\t" + predio + COMMA + " " + FIN_LINEA +
             "\t" + ciudad + COMMA + " " + departamento + " " + codigoPostal;
