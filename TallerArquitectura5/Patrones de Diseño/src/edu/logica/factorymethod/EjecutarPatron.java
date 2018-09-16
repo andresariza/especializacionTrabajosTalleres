@@ -6,7 +6,7 @@ public class EjecutarPatron {
 		FiguraFactoryMethod factory= new FiguraConcretaFactoryMethod();
 		Triangulo triangulo= factory.crearTriangulo(10, 8, 7);
 		System.out.println(triangulo.getDescripcion());
-		Cuadrilatero cuadrilatero = factory.crearCuadrilatero(2, 9, 2, 9);
+		Cuadrilatero cuadrilatero = factory.crearCuadrilatero(2, 9, 2, 11);
 		System.out.println(cuadrilatero.getDescripcion());
 	}
 

@@ -21,16 +21,25 @@ public class ContactoImpl implements Contacto{
             empresa = newEmpresa;
     }
     
+    @Override
     public String getNombre(){ return nombres; }
+    @Override
     public String getApellido(){ return apellidos; }
+    @Override
     public String getSaludo(){ return saludo; }
+    @Override
     public String getEmpresa(){ return empresa; }
     
+    @Override
     public void setNombre(String newNombre){ nombres = newNombre; }
+    @Override
     public void setApellido(String newApellido){ apellidos = newApellido; }
+    @Override
     public void setSaludo(String newSaludo){ saludo = newSaludo; }
+    @Override
     public void setEmpresa(String newEmpresa){ empresa = newEmpresa; }
     
+    @Override
     public String toString(){
         return nombres + SPACE + apellidos;
     }

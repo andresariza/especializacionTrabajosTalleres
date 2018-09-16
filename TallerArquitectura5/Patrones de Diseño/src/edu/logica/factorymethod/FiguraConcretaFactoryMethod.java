@@ -20,8 +20,9 @@ public class FiguraConcretaFactoryMethod  implements FiguraFactoryMethod{
 			return new Cuadrado(ladoA, ladoB, ladoC, ladoD);
 		}else if(ladoA == ladoC && ladoB == ladoD){
 			return new Rectangulo(ladoA, ladoB, ladoC, ladoD);
-		}
-		return null;
+		}else{
+                    return new Trapecio(ladoA, ladoB, ladoC, ladoD);
+                }
 	}
 
 }

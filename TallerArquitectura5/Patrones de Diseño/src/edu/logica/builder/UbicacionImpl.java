@@ -13,9 +13,12 @@ public class UbicacionImpl implements Ubicacion{
         ubicacion = newUbicacion;
     }
     
+    @Override
     public String getUbicacion(){ return ubicacion; }
     
+    @Override
     public void setUbicacion(String newUbicacion){ ubicacion = newUbicacion; }
     
+    @Override
     public String toString(){ return ubicacion; }
 }

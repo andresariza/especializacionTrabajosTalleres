@@ -6,6 +6,7 @@
 package edu.logica.builder;
 
 public class BuilderReunion extends BuilderCitas{
+    @Override
     public Cita getCita() throws InformacionIncompletaException{
         try{
             super.getCita();

@@ -15,7 +15,7 @@ public class InformacionIncompletaException extends Exception{
     public static final int DESCRIPCION_REQUERIDA = 4;
     public static final int ASISTENTE_REQUERIDO = 8;
     public static final int UBICACION_REQUERIDA = 16;
-    private int informacionRequerida;
+    private final int informacionRequerida;
     
     public InformacionIncompletaException(int elementosRequeridos){
         super(MENSAJE);
