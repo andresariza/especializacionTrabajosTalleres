@@ -35,7 +35,7 @@ public class EjecutarPatron{
             System.out.println("Creacion de una nueva cita con el Builder de Citas");
             // Se crea el producto
             cita = agenda.crearCita(
-                citaBuilder, fechaCita(2016, 4, 1, 15, 00), fechaCita(2017, 4, 1, 16, 00), "Patrones de Creacion: Builder, AbstracFactory, FactoryMethod, Prototype y Singleton", new UbicacionImpl("Universidad, Curso Modelos"),
+                citaBuilder, fechaCita(2019, 4, 1, 15, 00), fechaCita(2019, 4, 1, 16, 00), "Patrones de Creacion: Builder, AbstracFactory, FactoryMethod, Prototype y Singleton", new UbicacionImpl("Universidad, Curso Modelos"),
                 crearAsistentes(4));
             System.out.println("Se creo la Cita satisfactoriamente.");
             System.out.println("Informacion de la cita:");
@@ -58,7 +58,7 @@ public class EjecutarPatron{
             System.out.println(" constructor de Reuniones)");
             
             // Se crea el producto
-            cita = agenda.crearCita(reunionBuilder, fechaCita(2017, 4, 15, 15, 00),	fechaCita(2017, 4, 15, 17, 00), "Laboratorio de patrones de Creacion", new UbicacionImpl("Udistrital - , Lab 502 ING"),
+            cita = agenda.crearCita(reunionBuilder, fechaCita(2019, 4, 15, 15, 00),	fechaCita(2019, 4, 15, 17, 00), "Laboratorio de patrones de Creacion", new UbicacionImpl("Udistrital - , Lab 502 ING"),
                 crearAsistentes(30));
 			System.out.println("*****************************************************************************");
             System.out.println("Se creo la cita correctamente.");
@@ -78,7 +78,7 @@ public class EjecutarPatron{
         return newFecha.getTime();
     }
     
-    public static ArrayList crearAsistentes(int numeroACrear){
+    public static ArrayList<Contacto> crearAsistentes(int numeroACrear){
         ArrayList group = new ArrayList();
         for (int i = 0; i < numeroACrear; i++){
             group.add(new ContactoImpl("John", getApellido(i), "Profesor del grupo", "Universidad Distrital"));

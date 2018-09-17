@@ -11,7 +11,7 @@ public class Agenda{
 	
     public Cita crearCita(BuilderCitas builder,
         Date fechaInicial, Date fechaFinal, String descripcion,
-        Ubicacion ubicacion, ArrayList asistentes) throws InformacionIncompletaException{
+        Ubicacion ubicacion, ArrayList<Contacto> asistentes) throws InformacionIncompletaException{
             if (builder == null){
                 builder = new BuilderCitas();
             }

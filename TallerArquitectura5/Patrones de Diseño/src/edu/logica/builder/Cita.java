@@ -13,7 +13,7 @@ public class Cita{
     private Date fechaInicial;
     private Date fechaFinal;
     private String descripcion;
-    private ArrayList asistentes = new ArrayList();
+    private ArrayList<Contacto> asistentes = new ArrayList();
     private Ubicacion ubicacion;
     public static final String FIN_DE_LINEA ="-";
     
@@ -23,7 +23,9 @@ public class Cita{
     public ArrayList getAsistentes(){ return asistentes; }
     public Ubicacion getUbicacion(){ return ubicacion; }
 
-    public void setDescripcion(String newDescription){ descripcion = newDescription; }
+    public void setDescripcion(String newDescription){ 
+        descripcion = newDescription; 
+    }
     public void setUbicacion(Ubicacion newLocation){ ubicacion = newLocation; }
     public void setFechaInicial(Date newStartDate){ fechaInicial = newStartDate; }
     public void setFechaFinal(Date newEndDate){ fechaFinal = newEndDate; }
@@ -43,11 +45,12 @@ public class Cita{
         asistentes.remove(asistente);
     }
     
+    @Override
     public String toString(){
-        return "  Descripción: " + descripcion + FIN_DE_LINEA +
-            "  Inicio de la Reunión: " + fechaInicial + FIN_DE_LINEA +
-            "  Fin de la reunión: " + fechaFinal + FIN_DE_LINEA +
-            "  Ubicación: " + ubicacion + FIN_DE_LINEA +
+        return "  Descripciï¿½n: " + descripcion + FIN_DE_LINEA +
+            "  Inicio de la Reuniï¿½n: " + fechaInicial + FIN_DE_LINEA +
+            "  Fin de la reuniï¿½n: " + fechaFinal + FIN_DE_LINEA +
+            "  Ubicaciï¿½n: " + ubicacion + FIN_DE_LINEA +
             "  Asistentes: " + asistentes;
     }
 }
