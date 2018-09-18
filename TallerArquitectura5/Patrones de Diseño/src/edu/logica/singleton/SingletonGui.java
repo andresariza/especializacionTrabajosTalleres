@@ -23,7 +23,7 @@ public class SingletonGui implements ActionListener{
     private static int contadorHistorico;
     
     public void crearGui(){
-        mainFrame = new JFrame("Ejemplo de aplicación del Patron Singleton");
+        mainFrame = new JFrame("Ejemplo de aplicaciï¿½n del Patron Singleton");
         Container contenedor = mainFrame.getContentPane();
         contenedor.setLayout(new BoxLayout(contenedor, BoxLayout.Y_AXIS));
         
@@ -62,6 +62,7 @@ public class SingletonGui implements ActionListener{
             ListaHistorial.getInstancia().toString());
     }
     
+    @Override
     public void actionPerformed(ActionEvent evt){
         Object origen = evt.getSource();
         if (origen == newContacto){
@@ -89,13 +90,13 @@ public class SingletonGui implements ActionListener{
     
     private void addComando(String mensaje){
         ListaHistorial.getInstancia().addComando((++contadorHistorico) + mensaje);
-        actualizarDisplay("Adicionar acción: " + mensaje);
+        actualizarDisplay("Adicionar acciï¿½n: " + mensaje);
     }
     
     private void deshacer(){
         Object resultado = ListaHistorial.getInstancia().undoCommand();
         contadorHistorico--;
-        actualizarDisplay("Deshacer acción: " + resultado);
+        actualizarDisplay("Deshacer acciï¿½n: " + resultado);
     }
     
     private void exitApplication(){
