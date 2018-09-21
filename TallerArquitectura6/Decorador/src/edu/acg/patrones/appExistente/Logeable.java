@@ -9,6 +9,6 @@ package edu.acg.patrones.appExistente;
  *
  * @author andres
  */
-public class Logeable {
-    
+public interface Logeable {
+    public String mensajeLog(String msg);
 }

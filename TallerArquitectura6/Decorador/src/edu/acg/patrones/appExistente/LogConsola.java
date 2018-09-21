@@ -9,6 +9,9 @@ package edu.acg.patrones.appExistente;
  *
  * @author andres
  */
-public class LogConsola {
-    
+public class LogConsola implements Logeable {
+
+    public String mensajeLog(String msg) {
+        return msg;
+    }
 }
